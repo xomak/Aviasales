@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/aviasales</property>
+    <property name="connection.username">user</property>
+    <property name="connection.password">user</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <mapping class="j2.orm.entities.EAirline"/>
+    <mapping class="j2.orm.entities.EAirport"/>
+    <mapping class="j2.orm.entities.EClient"/>
+    <mapping class="j2.orm.entities.EContry"/>
+    <mapping class="j2.orm.entities.EFlightClass"/>
+    <mapping class="j2.orm.entities.EFlightCost"/>
+    <mapping class="j2.orm.entities.EFlightCostId"/>
+    <mapping class="j2.orm.entities.EFlightInfo"/>
+    <mapping class="j2.orm.entities.EFlight"/>
+    <mapping class="j2.orm.entities.ERole"/>
+    <mapping class="j2.orm.entities.ETicket"/>
+    <mapping class="j2.orm.entities.ETIcketId"/>
+    <mapping class="j2.orm.entities.EUser"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
